@@ -1,6 +1,6 @@
 ## How to set up a Symfony API
 
-#### Stack 
-- Symfony Framework
-- Symfony encore
-- Preact
+#### Installation
+- `symfony new api` api is just the name of the project change it to anything you want
+- `composer req api`
+
