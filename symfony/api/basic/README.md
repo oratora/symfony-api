@@ -13,20 +13,19 @@
 4. `composer require symfony/maker-bundle --dev`
 5. `bin/console make:user` 
 6. Ensure the User entity class has the `@ApiResource()` annotation
-7.  configure [security.yaml](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/config/security.yaml)
-8. configure [routes.yaml](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/config/routes.yaml)
-9. `symfony server:start`
-10. Make a GET request with [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) to http://127.0.0.1:8000/api/users this should return: 
+7.  configure [security.yaml](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/config/security.yaml) and [routes.yaml](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/config/routes.yaml)
+8. `symfony server:start`
+9. Make a GET request with [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) to http://127.0.0.1:8000/api/users this should return: 
 ```
 {
   "code": 401,
   "message": "JWT Token not found"
 }
 ```
-11. Connect to a database by configuring the `DATABASE_URL` inside the .env file
-12. `bin/console make:migration` then `bin/console doctrine:migrations:migrate`
-13. Configure [RegisterController.php](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/controller/RegisterController.php)
-14. Make POST request to http://127.0.0.1:8000/register with a JSON body:
+10. Connect to a database by configuring the `DATABASE_URL` inside the .env file
+11. `bin/console make:migration` then `bin/console doctrine:migrations:migrate`
+12. Configure [RegisterController.php](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/controller/RegisterController.php)
+13. Make POST request to http://127.0.0.1:8000/register with a JSON body:
 
 ```
 {
@@ -35,8 +34,8 @@
 }
 ```
 
-15. Check your database for a new user with the email `example@gmail.com`
-16. Make a POST request http://127.0.0.1:8000/api/login_check with a JSON body:
+14. Check your database for a new user with the email `example@gmail.com`
+15. Make a POST request http://127.0.0.1:8000/api/login_check with a JSON body:
 ```
 {
 "username" : "example@gmail.com",
@@ -44,7 +43,7 @@
 }
 ```
 
-This should return: 
+This should return (obviously, with a different token): 
 
 ```
 {
@@ -52,7 +51,7 @@ This should return:
 }
 ```
 
-17. Copy the token excluding the double quotations. Make a GET request to http://127.0.0.1:8000/api/users for the authentication use a bearer token, paste in the token and for the prefix write `BEARER`
+16. Copy the token excluding the double quotations. Make a GET request to http://127.0.0.1:8000/api/users for authentication use a bearer token, paste in the token and for the prefix write `BEARER`
 
 This should return:
 
