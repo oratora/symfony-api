@@ -1,2 +1,0 @@
-## Symfony API with Preact
-
