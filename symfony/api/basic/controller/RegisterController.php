@@ -54,8 +54,6 @@ class RegisterController extends AbstractController
         $content = $request->getContent();
         $req = json_decode($content);
 
-        $firstName = $req->first_name;
-        $lastName = $req->last_name;
         $email = $req->email;
         $plainTextPassword = $req->password;
 
@@ -68,8 +66,6 @@ class RegisterController extends AbstractController
         }
 
         $user = new User();
-        $user->setFirstName($firstName);
-        $user->setLastName($lastName);
         $user->setEmail($email);
         $user->setPassword(
             $this->encoder->encodePassword($user, $plainTextPassword)
