@@ -1,4 +1,4 @@
-# How to create a Symfony 5 API with JWT authentication
+# How to create a Symfony 5 API with JWT authentication & a generated React frontend
 
 ##### Stack 
 - [Symfony skeleton](https://symfony.com/doc/current/setup.html#creating-symfony-applications)
