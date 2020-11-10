@@ -53,7 +53,7 @@ This should return (obviously, with a different token):
 
 16. Copy the token excluding the double quotations. Make a GET request to http://127.0.0.1:8000/api/users for authentication use a bearer token, paste in the token and for the prefix write `BEARER`
 
-This should return:
+This should return [jsonld](https://json-ld.org/) in a [hydra](http://www.hydra-cg.com/) format:
 
 ```
 {
