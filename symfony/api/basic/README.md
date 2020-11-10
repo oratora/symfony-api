@@ -12,4 +12,4 @@ Steps
 3. `composer req lexik/jwt-authentication-bundle`
 4. `composer require symfony/maker-bundle --dev`
 5. `bin/console make:user` 
-6. Ensure the security.yaml looks like [documentation]()
+6. Ensure the security.yaml looks like [documentation](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/config/security.yaml)
