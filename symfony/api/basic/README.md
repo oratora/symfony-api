@@ -23,5 +23,14 @@
   "message": "JWT Token not found"
 }
 ```
-11. Create a user in your database
-11. Make another request to http://127.0.0.1:8000/api/login
+11. Connect to a database by configuring the `DATABASE_URL` inside the .env file
+12. `bin/console make:migration` then `bin/console doctrine:migrations:migrate`
+13. Configure [RegisterController.php](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/controller/RegisterController.php)
+14. Make another request to http://127.0.0.1:8000/api/register with a JSON body:
+
+```
+{
+"email" : "example@gmail.com",
+"password" : "12345678"
+}
+```
