@@ -1,4 +1,4 @@
-# How to create a basic API
+# How to create a Symfony 5 API
 
 ##### Stack 
 - [Symfony skeleton](https://symfony.com/doc/current/setup.html#creating-symfony-applications)
