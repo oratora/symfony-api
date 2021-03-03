@@ -1,5 +1,7 @@
-# Changing API output format globally
+# Changing API output format 
  
+ 
+ To change the output format globally:
 ```
 # api/config/packages/api_platform.yaml
 api_platform:
@@ -12,6 +14,16 @@ api_platform:
         yaml:     ['application/x-yaml']
         csv:      ['text/csv']
         html:     ['text/html']
+```
+
+
+or to change the output format for each entity, change the ApiResource annotation:
+
+```
+#[
+ApiResource(formats: ['json'])
+#ORM\Entity(repositoryClass=BlogRepository::class)
+]
 ```
 
 see the full documentation for [Configuring Formats Globally](https://api-platform.com/docs/core/content-negotiation/#configuring-formats-globally)
