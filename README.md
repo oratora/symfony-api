@@ -5,7 +5,7 @@
 To provide a tutorial repository, where you can find well documented code examples demonstrating how to achieve a specific result.
 For example: How to set up a Symfony API or how to set up a Symfony web application. 
 
-### Controbuting
+### Contributing
 If you contribute please keep the following in mind:
 
 - You may be an expert in the feild, others are not. Write it as if you are teaching someone who has never heard of the topic before. 
