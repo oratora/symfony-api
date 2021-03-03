@@ -1,8 +1,5 @@
-# Changing API output format
-
-
-to change the API formats globally: 
-
+# Changing API output format globally
+ 
 ```
 # api/config/packages/api_platform.yaml
 api_platform:
@@ -16,8 +13,5 @@ api_platform:
         csv:      ['text/csv']
         html:     ['text/html']
 ```
-
-
-
 
 see the full documentation for [Configuring Formats Globally](https://api-platform.com/docs/core/content-negotiation/#configuring-formats-globally)
