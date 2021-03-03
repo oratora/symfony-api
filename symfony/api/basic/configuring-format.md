@@ -20,10 +20,17 @@ api_platform:
 or to change the output format for each entity, change the ApiResource annotation:
 
 ```
-#[
-ApiResource(formats: ['json'])
-#ORM\Entity(repositoryClass=BlogRepository::class)
-]
+#[ApiResource(formats: ['json'])]
+#[ORM\Entity(ExampleRepository::class)]
 ```
+for older versions:
+
+```
+/**
+ * @ApiResource(attributes={"formats"={"json"}})
+ * @ORM\Entity(repositoryClass=ExampleRepository::class)
+ */
+```
+
 
 see the full documentation for [Configuring Formats Globally](https://api-platform.com/docs/core/content-negotiation/#configuring-formats-globally)
