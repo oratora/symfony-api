@@ -80,6 +80,6 @@ This should return [jsonld](https://json-ld.org/) in a [hydra](http://www.hydra-
 
 ## Useful information:
 
-- [How to configure API formats globally]()
+- [How to configure API formats globally](https://github.com/oratora/web-development-php/blob/master/symfony/api/basic/configuring-formats-globally.md)
 
 
